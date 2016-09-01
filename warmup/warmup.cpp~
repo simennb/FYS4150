@@ -1,0 +1,23 @@
+#include <stdlib.h> /* atof function */
+#include <iostream>   // input and output
+#include <cmath>      // math functions
+using namespace std;
+
+double f_euler(double& x, double& h){
+  double dfdx;
+  
+  dfdx = (atan(x+h) - atan(x))/h;
+
+  return dfdx;
+}
+
+int main (){
+  double x = sqrt(2);
+  double h = 0.1;
+  double f_array [5];
+  /*Add dynamic memory allocation?*/
+  f_array[0] = f_euler(x,h);
+  cout << f_array[0];
+  return 0;
+
+}

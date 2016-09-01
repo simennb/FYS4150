@@ -1,0 +1,12 @@
+# makefile
+
+CC= g++ -Wall
+PROG = test1
+
+LIB = -lm
+
+${PROG} :	${PROG}.o
+		${CC} ${PROG}.o ${LIB} -o ${PROG}
+
+${PROG}.o :	${PROG}.cpp
+		${CC} -c ${PROG}.cpp
