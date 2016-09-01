@@ -1,4 +1,2 @@
 # FYS4150
-test123
-
-Hello, World!
+Contains projects in FYS4150: Computational Physics
